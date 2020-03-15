@@ -93,11 +93,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
-#Init
-TARGET_INIT_VENDOR_LIB := libinit_raphael
-TARGET_RECOVERY_DEVICE_MODULES := libinit_raphael
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
@@ -129,22 +124,19 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
 SHRP_PATH := device/xiaomi/raphael
-# Maintainer name
 SHRP_MAINTAINER := pallavjparikh
-# Device codename
 SHRP_DEVICE_CODE := raphael
-# put this 0 if device has no EDL mode
 SHRP_EDL_MODE := 1
 SHRP_EXTERNAL := /external_sd
 SHRP_INTERNAL := /sdcard
 SHRP_OTG := /usb_otg
-# Put 0 to disable flashlight
 SHRP_FLASH := 1
-# These are led paths, find yours then put here
+
 SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
 SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
 SHRP_FONP_3 := /sys/class/leds/led:switch/brightness
-# Max Brightness of LED
 SHRP_FLASH_MAX_BRIGHTNESS := 200
-# Check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A_Only
+
