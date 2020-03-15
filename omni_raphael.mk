@@ -30,9 +30,6 @@ PRODUCT_MODEL := Xiaomi Redmi K20 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.device \
-    ro.product.name \
-    ro.build.product \
     ro.bootimage.build.date.utc \
     ro.build.date.utc
 
