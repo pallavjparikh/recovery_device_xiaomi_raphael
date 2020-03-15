@@ -14,15 +14,9 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+    LOCAL_PATH := $(call my-dir)	LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
 
-LOCAL_MODULE_TAGS := optional
-LOCAL_C_INCLUDES := \
-    system/core/base/include \
-    system/core/init
-LOCAL_SRC_FILES := init_raphael.cpp
-LOCAL_MODULE := libinit_raphael
-
-include $(BUILD_STATIC_LIBRARY)
+ifneq ($(filter raphael,$(TARGET_DEVICE)),)	include $(CLEAR_VARS)
+include $(call all-makefiles-under,$(LOCAL_PATH))	
+endi
