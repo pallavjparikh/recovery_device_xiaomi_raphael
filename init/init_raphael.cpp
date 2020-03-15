@@ -56,7 +56,7 @@ void vendor_load_properties() {
     }
     else if (device_region == "INDIA")
     {
-        load_properties("raphaelin");
+        load_properties("raphael");
     }
     else if (device_region == "GLOBAL")
     {
