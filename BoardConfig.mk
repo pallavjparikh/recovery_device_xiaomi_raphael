@@ -148,3 +148,8 @@ SHRP_FONP_3 := /sys/class/leds/led:switch/brightness
 SHRP_FLASH_MAX_BRIGHTNESS := 200
 # Check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_EXPRESS := true
+SHRP_DARK := true
+SHRP_OFFICIAL := true
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_Only
